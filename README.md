@@ -12,3 +12,6 @@
 3. В папку libpack скопируйте нужные пакеты
 4. Установите зависимости: pip install lxml
 5. Запустите скрипт libpack2gsm.py
+
+## Пример конвертации
+https://disk.yandex.ru/d/KNtOiah8td9_hg
