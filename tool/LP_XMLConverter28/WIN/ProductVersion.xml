@@ -1,0 +1,16 @@
+<productversion>
+  <buildnumber>3001</buildnumber>
+  <codename>v2024</codename>
+  <product_family_id>archicad</product_family_id>
+  <versionstring>28.0.0</versionstring>
+  <updateversionstring>0</updateversionstring>
+  <hotfixversionstring>0</hotfixversionstring>
+  <shortversionstring>28</shortversionstring>
+  <platform>WIN64</platform>
+  <cpuarchitecture>x86-64</cpuarchitecture>
+  <gslanguage>INT</gslanguage>
+  <gsprodtype>FULL</gsprodtype>
+  <privatebuild/>
+  <nonreferencebuild/>
+  <prefspostfix>v2024 INT 3001</prefspostfix>
+</productversion>

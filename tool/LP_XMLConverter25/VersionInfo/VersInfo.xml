@@ -1,0 +1,8 @@
+<versinfo>
+	<codename>v2021</codename>
+	<state>release</state> <!-- development, alpha, beta, release-->
+	<releasename_mac>v1</releasename_mac>
+	<releasename_win>R1</releasename_win>
+	<fullversionstring>25.0.0</fullversionstring>	<!-- must be numbers with 3 '.'-s -->
+	<libraryversionstring>25.0.0</libraryversionstring>
+</versinfo>

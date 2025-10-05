@@ -24,6 +24,8 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.libpack
+*.lcf
 MANIFEST
 
 # PyInstaller
@@ -205,3 +207,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+*.version

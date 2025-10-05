@@ -1,0 +1,11 @@
+<versinfo>
+	<codename>v2024</codename> <!-- SUA_SetProgVers_PrevToNextYear_DONOTDELETETHISCOMMENT-->
+	<state>release</state> <!-- development, alpha, beta, release-->
+	<releasename_mac>v1</releasename_mac>
+	<releasename_win>R1</releasename_win>
+	<product_family_id>archicad</product_family_id> <!-- archicad, rikcad, namirial -->
+	<fullversionstring>28.0.0</fullversionstring>	<!-- must be numbers with 3 '.'-s --><!-- SUA_SetProgVers_PrevToNextVersionNumber_DONOTDELETETHISCOMMENT-->
+	<libraryversionstring>28.0.0</libraryversionstring>	<!-- SUA_SetProgVers_PrevToNextVersionNumber_DONOTDELETETHISCOMMENT-->
+	<updateversion>0</updateversion>
+	<hotfixversion>0</hotfixversion>
+</versinfo>

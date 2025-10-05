@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file should only be modified upon confirmation by ArchiCAD EXE development! -->
+<BuiltInLibPartMainGUIDs>
+	<BuiltInLibPart ID="1" FileName="Air Handlers.xml">
+		<MainGUID>6A371992-1316-430D-8411-37F70CF37C37</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="2" FileName="Animal.xml">
+		<MainGUID>FC416D53-87DB-4416-B1A3-CB382A8AF26F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="3" FileName="Attribute Definition.xml">
+		<MainGUID>12974DCB-3EC8-4A56-8738-E5495F5213A4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="4" FileName="Basic Zone Stamp.xml">
+		<MainGUID>3BA7290C-B867-48F3-B4A4-D37DD1BA11E8</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="5" FileName="Beam.xml">
+		<MainGUID>37669729-B714-4F9B-B074-6C4DE055DAE0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="6" FileName="Beds.xml">
+		<MainGUID>459266EF-47C8-48A5-AD37-C313A81CE324</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="7" FileName="Boilers.xml">
+		<MainGUID>C65B980A-0B62-4C37-855E-AC18926FB7D7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="8" FileName="Break Mark Symbol.xml">
+		<MainGUID>E553BACE-758B-4D08-87C9-BA224E55DCE3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="9" FileName="Building Element.xml">
+		<MainGUID>784EAEA1-5041-4AA6-B6F4-EF263A891EE7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="10" FileName="Built-In Break Mark.xml">
+		<MainGUID>59995CD2-04A0-42B3-B31C-F8E2B1A181B9</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="11" FileName="Built-in Butt-Glazed Frame.xml">
+		<MainGUID>1AA72365-7EE8-4D91-925D-F892FE61E867</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="12" FileName="Built-in Change Marker.xml">
+		<MainGUID>00860D84-1D83-4BE5-B589-B271742458AE</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="13" FileName="Built-in CW Panel.xml">
+		<MainGUID>44D1844C-5D92-7042-81F0-77DAFA0B91B6</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="14" FileName="Built-In Description.xml">
+		<MainGUID>DAFBC66C-35B7-41AA-A431-FBC3C3FFA107</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="15" FileName="Built-in Detail Marker.xml">
+		<MainGUID>6A27E518-FC74-47F4-9927-806EF759091A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="16" FileName="Built-in Drawing Title.xml">
+		<MainGUID>0E7899A8-7D06-4026-B3DA-EF2331EEFC1D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="17" FileName="Built-in Elevation Marker.xml">
+		<MainGUID>6A08BA99-6C84-4B6E-AA5A-C0CAEDC741A6</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="18" FileName="Built-in Frame.xml">
+		<MainGUID>AB3705AC-19DA-DB4B-A9F5-D815196E71B9</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="19" FileName="Built-In Numbering.xml">
+		<MainGUID>0D6D9FCD-1643-4D3C-B754-DB6AB2F59A4C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="20" FileName="Built-In Riser.xml">
+		<MainGUID>01D02CB1-80F4-46F8-BF42-EA25D6A57B30</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="21" FileName="Built-in Section Marker.xml">
+		<MainGUID>D7C54843-B69D-412B-A603-6AE1785764E0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="22" FileName="Built-In Stair Grid.xml">
+		<MainGUID>BC2A8AD4-B119-490E-92FF-8B6423C927D3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="23" FileName="Built-in Story Marker.xml">
+		<MainGUID>19225D34-BA38-44FE-BAF2-94D57B069FC9</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="24" FileName="Built-In Tread.xml">
+		<MainGUID>C4916D55-A29D-45BB-98F3-85448EC0E289</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="25" FileName="Built-In Up-Down Text.xml">
+		<MainGUID>2251A23D-E72B-4EEC-95A8-01400C69552C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="26" FileName="Built-In Walking Line.xml">
+		<MainGUID>884067E6-6E8F-408E-A5A4-47B5BC5689CC</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="27" FileName="Built-in Worksheet Marker.xml">
+		<MainGUID>597E2C4C-3B6D-4C9A-AF41-53560C5D9898</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="28" FileName="Cable Carrier Bend Fitting.xml">
+		<MainGUID>BD898879-DDA5-46FF-BE91-CD7D3B349677</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="29" FileName="Cable Carrier Cross Junction.xml">
+		<MainGUID>9E5CBC9A-7F44-4C37-B0EF-AA898710330A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="30" FileName="Cable Carrier Fitting.xml">
+		<MainGUID>57860FB9-FA18-4D9A-AC7B-AF9B158050DF</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="31" FileName="Cable Carrier Junction Fitting.xml">
+		<MainGUID>07F87269-1DF9-407E-8AF8-394AE8D68496</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="32" FileName="Cable Carrier Reducer Fitting.xml">
+		<MainGUID>496CC358-F0F8-45C9-97E4-DFAC03DA6285</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="33" FileName="Cable Carrier Segment.xml">
+		<MainGUID>75644B45-8A49-4FAB-A52A-5D916723E205</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="34" FileName="Cable Carrier Tee Junction.xml">
+		<MainGUID>C615D174-A6D9-4B2B-953D-921B457B4B49</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="35" FileName="Cable Carrier Wye Junction.xml">
+		<MainGUID>D4A915E5-8B91-49E6-BCCA-5C34D55E8D5F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="36" FileName="Cable Ladder Segment.xml">
+		<MainGUID>8F426DA8-41F0-47FF-BEE2-F859FC7A04A7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="37" FileName="Cable Tray Segment.xml">
+		<MainGUID>1747F652-6DFB-44B2-840B-630698CC2E88</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="38" FileName="Change Marker.xml">
+		<MainGUID>0629A4D6-7484-4223-BCEA-4670DD3F516C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="39" FileName="Chillers.xml">
+		<MainGUID>9A9268A6-D263-4BB9-A0F8-5AD2E54CA5FB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="40" FileName="Column.xml">
+		<MainGUID>ADE7F174-1585-45D7-ABEE-E84158A7C238</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="41" FileName="Common Interior Elevation Marker.xml">
+		<MainGUID>BD886534-3F0A-471B-AF6C-8471EB0DB5AD</MainGUID>
+	</BuiltInLibPart>
+  <BuiltInLibPart ID="42" FileName="Corner Window.xml">
+    <MainGUID>7DDE9DC4-66BD-41C8-8376-46D0B352F69B</MainGUID>
+  </BuiltInLibPart>
+  <BuiltInLibPart ID="43" FileName="Corner Window Opening.xml">
+    <MainGUID>BEA11292-F52D-4096-A36F-8835A19FB59E</MainGUID>
+  </BuiltInLibPart>
+	<BuiltInLibPart ID="44" FileName="Covering.xml">
+		<MainGUID>21DE7666-EF71-4885-8222-629F88CB3F4A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="45" FileName="Curtain Wall Accessory.xml">
+		<MainGUID>BF777B36-1390-4EAE-B083-17ECA005F3B4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="46" FileName="Curtain Wall Frame.xml">
+		<MainGUID>D9E882FA-F01C-4C11-918F-807D02F0DAD3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="47" FileName="Curtain Wall Junction.xml">
+		<MainGUID>E13BA84D-F4F1-41A5-9045-A67AFEC42293</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="48" FileName="Curtain Wall Panel.xml">
+		<MainGUID>E38AD1B0-67AD-4F5D-A5FB-FB1EE46E66A6</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="49" FileName="Curtain Wall.xml">
+		<MainGUID>18369A2B-7FFC-4AD2-8070-FE3DFB27E6B4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="50" FileName="Custom Component Template.xml">
+		<MainGUID>5F9A4C89-F8C9-42D6-AEB5-EA5927E29A32</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="51" FileName="Custom Duct Fitting.xml">
+		<MainGUID>7284FB40-9730-4BF4-99DE-183879C1C29E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="52" FileName="Custom Duct Flow Terminal.xml">
+		<MainGUID>207199BD-1312-4DB6-9631-C4792874C0A1</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="53" FileName="Custom Duct In-line Flow Device.xml">
+		<MainGUID>57F77A94-6DA0-4820-B387-BCB90712CD89</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="54" FileName="Custom Flow Equipment.xml">
+		<MainGUID>B3CE0129-1DB4-420F-BE16-2477A2CD45D9</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="55" FileName="Custom Pipe Fitting.xml">
+		<MainGUID>A39DE2F8-431A-4098-964D-95C39A41F88C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="56" FileName="Custom Pipe Flow Terminal.xml">
+		<MainGUID>1C3428CF-3BBB-49E3-8718-EACBC44B481E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="57" FileName="Custom Pipe In-line Flow Device.xml">
+		<MainGUID>7801A021-7C01-4D18-918E-6B565E06D5DC</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="58" FileName="Design Railing.xml">
+		<MainGUID>25CCB06E-8D01-4780-8F38-00A6496BDCF3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="59" FileName="Design Stair.xml">
+		<MainGUID>1AE13752-A530-420C-B9ED-FB2B15FD4942</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="60" FileName="Detail Marker.xml">
+		<MainGUID>BEE8F3CB-CF52-4029-9602-9B449461EF64</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="61" FileName="Discrete Accessory.xml">
+		<MainGUID>06BA412F-7262-4221-A9B3-1A3E410E9170</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="62" FileName="Distribution Element.xml">
+		<MainGUID>9BCE6139-F733-4E13-B439-AAF1AF232B89</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="63" FileName="Distribution Flow Element.xml">
+		<MainGUID>30E58E66-1DA9-4D20-9341-700170100E12</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="64" FileName="Documentation Element.xml">
+		<MainGUID>B176ABF1-5813-478F-926B-28EE7C5DC1F7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="65" FileName="Door (Wall).xml">
+		<MainGUID>11E85B84-8DD1-491B-A2FE-337454A91545</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="66" FileName="Door Marker.xml">
+		<MainGUID>A18169BC-B873-4C32-B6C4-1CEBFA07F494</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="67" FileName="Door Opening.xml">
+		<MainGUID>2EC5287F-2262-4CAB-BE0A-0C3307066128</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="68" FileName="Dormer.xml">
+		<MainGUID>A714DB74-67E4-4889-9796-26A6BDFC069B</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="69" FileName="Drawing Symbol.xml">
+		<MainGUID>4FD10D67-2F29-4844-A65A-6597589B0CB5</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="70" FileName="Drawing Title.xml">
+		<MainGUID>E861C53A-AE47-47A1-8AE8-D815C1B6E49A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="71" FileName="Duct Bend Fitting.xml">
+		<MainGUID>ADE2B376-F688-4E48-BC3F-BC7BAB38A27B</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="72" FileName="Duct End-cap Fitting.xml">
+		<MainGUID>3DA15F69-23DE-42E0-844F-64CF52490D5C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="73" FileName="Duct Fitting.xml">
+		<MainGUID>2E9E2CF0-3B67-4D99-841D-FE78BBC31295</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="74" FileName="Duct Flexible Segment.xml">
+		<MainGUID>C662D93A-2684-4047-A3D0-95C82D1BD0A8</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="75" FileName="Duct Flow Terminal.xml">
+		<MainGUID>9A2D1C1C-6B58-4630-9B72-EF4484685FCF</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="76" FileName="Duct In-line Flow Device.xml">
+		<MainGUID>2D6BCAE1-BAF8-4ACD-BE60-D38D0F934C7C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="77" FileName="Duct Junction Fitting.xml">
+		<MainGUID>136EE28C-49BF-4C7B-8866-124019E82096</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="78" FileName="Duct Nested Junction.xml">
+		<MainGUID>81FAAE20-8943-4271-8BF2-02D27177552A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="79" FileName="Duct Obstruction Fitting.xml">
+		<MainGUID>80782754-4EA2-475F-BDB5-88E2B13C1839</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="80" FileName="Duct Offset Fitting.xml">
+		<MainGUID>2564D2B8-408C-4ED6-980E-DE61A8072F84</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="81" FileName="Duct Rigid Segment.xml">
+		<MainGUID>E5EDF4D7-7112-49EF-A96D-B5E4F3B48BDE</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="82" FileName="Duct Segment.xml">
+		<MainGUID>75DB4DFC-77DF-4D4B-9BFA-9233AB67A16E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="83" FileName="Duct Take-off Junction.xml">
+		<MainGUID>D1A6C1DC-BF06-4D81-BE7C-6965CC6ADD95</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="84" FileName="Duct Tee Junction.xml">
+		<MainGUID>7B952C32-A009-4B85-B842-F5FEB3589F2F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="85" FileName="Duct Transition Fitting.xml">
+		<MainGUID>EE223F0B-1BAA-4314-A4C6-6E757912D939</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="86" FileName="Duct Vertical Obstruction Fitting.xml">
+		<MainGUID>A357B8A0-4696-4F61-A74C-0E004AC88103</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="87" FileName="Duct Wye Junction.xml">
+		<MainGUID>03F25003-45CC-4A4F-9FD0-0C3F3476F71F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="88" FileName="Electrical Element.xml">
+		<MainGUID>0DF8E541-68EB-4102-8886-C144F74770E0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="89" FileName="Element Component.xml">
+		<MainGUID>56A4A77E-2509-450D-94D0-A816189B7DF4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="90" FileName="Elevation Marker.xml">
+		<MainGUID>9FABBD06-D663-4519-809E-76E90E5A6BA5</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="91" FileName="Fans.xml">
+		<MainGUID>5C9558B3-F90A-4B5B-BF8A-79663021BC4A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="92" FileName="Fill Definition.xml">
+		<MainGUID>A3D64CC5-1E34-43DC-9024-309C8805F6F3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="93" FileName="Flight Side Supported Stepped.xml">
+		<MainGUID>156C8BCC-09A6-41F5-BB0E-F31BFE2F0AE0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="94" FileName="Flight Side Supported Straight.xml">
+		<MainGUID>76047625-8683-41F5-990B-EA84F9895236</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="95" FileName="Flight Side Supported.xml">
+		<MainGUID>6E02DE5B-475D-4022-B3F1-0C094A4021EB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="96" FileName="Flight Structure.xml">
+		<MainGUID>D9D77C5C-6DBB-47A0-B6E2-7AD459055471</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="97" FileName="Flight Under Supported Cantilever.xml">
+		<MainGUID>1A2E5F1F-A232-47DE-A0B1-D129420A610C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="98" FileName="Flight Under Supported Stepped.xml">
+		<MainGUID>B6809CEF-F54C-435A-B9B5-204AA44E71C5</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="99" FileName="Flight Under Supported Straight.xml">
+		<MainGUID>79F07C3E-CF09-44B2-A740-B17F6E7172B1</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="100" FileName="Flight Under Supported.xml">
+		<MainGUID>D3A4BCC1-5C60-4B71-A16F-C642F2E005C7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="101" FileName="Flow Device.xml">
+		<MainGUID>D39DF9D9-2191-4C4D-B004-2E8C1B298D7C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="102" FileName="Flow Equipment.xml">
+		<MainGUID>0D6515ED-B372-41C6-8291-C527CE94BA43</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="103" FileName="Flow Fitting.xml">
+		<MainGUID>FA7231CE-B247-4F90-8B24-0FBD292C6C96</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="104" FileName="Flow Segment.xml">
+		<MainGUID>8BDD43BD-7237-46D8-8AB1-76D794D6213A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="105" FileName="Flow Terminal.xml">
+		<MainGUID>08AD6C29-9688-4F09-9BB0-D205E5FF349E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="106" FileName="Footing.xml">
+		<MainGUID>BAED71F0-5315-4FD2-B109-18798FC6B050</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="107" FileName="Furnishing.xml">
+		<MainGUID>C76BC373-89AE-4368-A490-BB2485825242</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="108" FileName="General GDL Object.xml">
+		<MainGUID>F938E33A-329D-4A36-BE3E-85E126820996</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="109" FileName="Heat Pumps.xml">
+		<MainGUID>815312A0-BFC2-4AF3-922D-1B96D67B686D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="110" FileName="Individual IE Marker.xml">
+		<MainGUID>63587D2A-2CD8-42F7-9C6C-41D2AC0324D2</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="111" FileName="Individual Interior Elevation Marker.xml">
+		<MainGUID>B8526834-5504-4DD5-91F3-1FF6FC1BFD62</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="112" FileName="In-line Flow Device.xml">
+		<MainGUID>0B18DEBE-3653-46FF-BADE-60681EEA51BA</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="113" FileName="Label.xml">
+		<MainGUID>BDB8C3EE-4019-46C8-91D0-7A8DE0A5EC6D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="114" FileName="Landing Cantilever Supported.xml">
+		<MainGUID>B46D5B6F-0056-4006-9574-A08C5F04195E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="115" FileName="Landing Side Supported.xml">
+		<MainGUID>A1F1CAE4-92E3-4CDF-97C4-A3708B335C6D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="116" FileName="Landing Structure.xml">
+		<MainGUID>C1C599FB-6EB9-41D4-AF84-5B700971A665</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="117" FileName="Landing Under Supported.xml">
+		<MainGUID>1565ECAF-DB73-45FF-B926-091A83656C82</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="118" FileName="Library Global Settings.xml">
+		<MainGUID>709CC5CC-6817-4C56-A74B-BED99DDB5FFA</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="119" FileName="Library Master.xml">
+		<MainGUID>66B148A3-EF82-455A-80D9-AB9AFB5B6B9C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="120" FileName="Light.xml">
+		<MainGUID>51A838E5-0F40-4F6D-A658-CF2845581749</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="121" FileName="Marker.xml">
+		<MainGUID>B3A106BF-6277-456E-8657-65B5C2D1C315</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="122" FileName="Model Element.xml">
+		<MainGUID>103E8D2C-8230-42E1-9597-46F84CCE28C0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="123" FileName="Numbering Symbol.xml">
+		<MainGUID>D5FC2839-7516-42AF-811E-785C12AD56F4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="124" FileName="Opening.xml">
+		<MainGUID>6ACDA889-69B2-4EC5-936C-CB1DA7032A92</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="125" FileName="Ordinate Dimension.xml">
+		<MainGUID>D09C6DBB-FD6B-4057-82F0-352AAA054083</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="126" FileName="Patch.xml">
+		<MainGUID>27D27CB8-5923-458A-80FA-6A8EC6B78CFF</MainGUID>
+	</BuiltInLibPart>
+  <BuiltInLibPart ID="127" FileName="Patch_Template.xml">
+    <MainGUID>D782F8DB-5E80-47B6-8E9A-AE497D1C7C37</MainGUID>
+  </BuiltInLibPart>
+	<BuiltInLibPart ID="128" FileName="Pattern Definition.xml">
+		<MainGUID>A3BCE8CD-526B-4A5C-ADF2-30B5C442AC4A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="129" FileName="People.xml">
+		<MainGUID>862C9EE6-DFFE-4C50-9C02-94C3AAD3F48C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="130" FileName="Pipe Bend Fitting.xml">
+		<MainGUID>FB6FB6DD-54E3-41DE-9B37-35DDAF2B2A66</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="131" FileName="Pipe Combination Wye Junction.xml">
+		<MainGUID>A1EB8235-C205-48B2-BB3F-1A47532F91C3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="132" FileName="Pipe Cross Junction.xml">
+		<MainGUID>BA22C96A-69AC-4DDD-8633-10DFC0A72E33</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="133" FileName="Pipe Double Combination Wye Junction.xml">
+		<MainGUID>9890BE4A-93CA-4467-86D1-96DEB1317653</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="134" FileName="Pipe Double Sanitary Tee Junction.xml">
+		<MainGUID>901559EC-C7AE-4A0A-BC12-57CDA82C7332</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="135" FileName="Pipe Double Wye Junction.xml">
+		<MainGUID>9C6D1D82-E2E6-42B7-B824-B771131AC65D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="136" FileName="Pipe Fitting.xml">
+		<MainGUID>98999889-93DA-4729-9729-0D878A2A8B11</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="137" FileName="Pipe Flow Terminal.xml">
+		<MainGUID>26ED49D3-4ABC-463A-A2A1-DC5BA8212377</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="138" FileName="Pipe In-line Flow Device.xml">
+		<MainGUID>19A86D81-F85A-492A-8A09-D43D8AA09F78</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="139" FileName="Pipe Junction Fitting.xml">
+		<MainGUID>9F5ABB87-0F91-4770-AB31-96A4E47569D2</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="140" FileName="Pipe Rigid Segment.xml">
+		<MainGUID>18651512-C4DA-4D32-BEB8-59514636063E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="141" FileName="Pipe Sanitary Tee Junction.xml">
+		<MainGUID>1266C57C-5210-4270-9930-2936B24EEDFD</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="142" FileName="Pipe Segment.xml">
+		<MainGUID>779E23D0-B7C9-4CE3-9635-07F42DC5F130</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="143" FileName="Pipe Take-off Junction.xml">
+		<MainGUID>28A29D2B-4F2B-4341-A231-E7FDA30013C4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="144" FileName="Pipe Tee Junction.xml">
+		<MainGUID>341EFBBF-7998-4F5D-97F6-77BBA197D4DB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="145" FileName="Pipe Transition Fitting.xml">
+		<MainGUID>C7D3B604-E46E-47CF-A314-80B222D09BC7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="146" FileName="Pipe Wye Junction.xml">
+		<MainGUID>5B300508-D5C7-414A-AB3E-A1E9834CC0DD</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="147" FileName="Plant.xml">
+		<MainGUID>0E7235D8-42A8-45E9-A8E4-4F3A10773293</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="148" FileName="PointCloud Replacement Object.xml">
+		<MainGUID>EF989D90-2D77-4540-B255-2CAA21AC6017</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="149" FileName="PointCloud.xml">
+		<MainGUID>B298E56B-35FF-45C6-AA50-6D7F0B40BB1A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="150" FileName="Property Objects.xml">
+		<MainGUID>8F157ABA-E5C9-48B6-9DCE-68F0F02A808E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="151" FileName="Railing 3D Component.xml">
+		<MainGUID>0E47366B-6A7A-4546-93AA-9EF52EAA08A0</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="152" FileName="Railing End Component.xml">
+		<MainGUID>92189848-C884-4FB4-B168-EE86B69D210B</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="153" FileName="Railing Panel Component.xml">
+		<MainGUID>8D7CE7BA-1AA5-45CA-917A-C2DDED19C9DA</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="154" FileName="Railing Post Component.xml">
+		<MainGUID>39FE5EF7-E961-4088-A218-8511518507BB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="155" FileName="Railing Rail Component.xml">
+		<MainGUID>B9599B25-6BD0-4B29-8053-55C01A31FB5F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="156" FileName="Railing.xml">
+		<MainGUID>09BEB35E-7BF8-448C-B408-AC04D159B0D1</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="157" FileName="Ramp.xml">
+		<MainGUID>972791D9-92A6-4ABA-84E9-29E2CBC205A7</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="158" FileName="Rise and Run Description.xml">
+		<MainGUID>8540D0D3-5C15-4389-B3DC-A7B20D96141F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="159" FileName="Riser Component.xml">
+		<MainGUID>0E7556FF-E931-4E29-A31B-0FF0DFA71CDF</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="160" FileName="Roof Component.xml">
+		<MainGUID>4E5B3C37-FC62-45CC-A81D-6C48E85111AB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="161" FileName="Roof Opening.xml">
+		<MainGUID>5921D56A-82F2-4253-BD84-6091E5717DC4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="162" FileName="Roof.xml">
+		<MainGUID>04A9E324-9963-4010-9737-CE77BC3A3ECF</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="163" FileName="SaveAsLabelTemplate.xml">
+		<MainGUID>371F86DA-0974-4FBB-AC70-E2E69DB19708</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="164" FileName="Schematic Riser.xml">
+		<MainGUID>EDB56409-A3E5-43D7-AAD3-B1A055FCE251</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="165" FileName="Schematic Tread.xml">
+		<MainGUID>6B53545E-CE59-447E-A753-F2568A368459</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="166" FileName="Section Marker.xml">
+		<MainGUID>9E938E0A-367D-40DB-84BB-B1D56EFDBF75</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="167" FileName="Section-Elevation Marker.xml">
+		<MainGUID>930D0E3F-8BD2-4A54-A1F0-DAC3DB4531D4</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="168" FileName="Simple Door Opening.xml">
+		<MainGUID>F6FAB810-3A56-4C74-8EB8-B58738A9EE9B</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="169" FileName="Simple Skylight Opening.xml">
+		<MainGUID>0654C626-430D-11DF-85ED-521F56D89593</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="170" FileName="Simple Window Opening.xml">
+		<MainGUID>05A15B9B-AA9A-4D38-AE53-95C335CFA1BB</MainGUID>
+	</BuiltInLibPart>
+  <BuiltInLibPart ID="171" FileName="Skylight Marker.xml">
+    <MainGUID>4F4589C1-3E31-41C8-AEAD-AEB8DE3F5264</MainGUID>
+  </BuiltInLibPart>
+	<BuiltInLibPart ID="172" FileName="Skylight.xml">
+		<MainGUID>0E0831DD-3766-4A60-BBE7-19A9537F76E3</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="173" FileName="Slab Opening.xml">
+		<MainGUID>FC8F03DA-42F9-41B0-97A8-B7B37574FF0F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="174" FileName="Slab.xml">
+		<MainGUID>877CFE0D-8496-4C47-9671-D919BB1E3712</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="175" FileName="Solar Collectors.xml">
+		<MainGUID>899230AE-4109-48CE-912A-805BB810C0D9</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="176" FileName="Solar PV Panels.xml">
+		<MainGUID>229BDA4D-F3C5-4E07-A852-332812ECA16A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="177" FileName="Sport Field.xml">
+		<MainGUID>44F861A4-0619-483B-B3BC-7E3B879BBD3C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="178" FileName="Stair 2D Component.xml">
+		<MainGUID>267A546D-EC1B-4220-A903-53F6051361C5</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="179" FileName="Stair 3D Component.xml">
+		<MainGUID>FFBD3CCB-E0A4-44CD-8EDC-7CBBA7D123FB</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="180" FileName="Stair Grid Symbol.xml">
+		<MainGUID>143359D3-AADE-4E72-B066-AFAF0244FE1F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="181" FileName="Stair Library Global.xml">
+		<MainGUID>122DE75C-895F-46D9-9487-42AB7D450991</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="182" FileName="Stair.xml">
+		<MainGUID>57B7C584-5C0D-11D6-A0D8-036F034B6792</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="183" FileName="Story Marker.xml">
+		<MainGUID>7A407B90-C976-40DB-ACD5-8C3142C93727</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="184" FileName="Street Furniture.xml">
+		<MainGUID>F14D8497-D0A3-4AFB-AE53-ACBBC289B577</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="185" FileName="Structure.xml">
+		<MainGUID>C49562BE-4476-4E27-972E-43873A9CC930</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="186" FileName="Surface Definition.xml">
+		<MainGUID>BB7F6D33-32FA-4D87-9319-1DE0B3A53293</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="187" FileName="Traffic.xml">
+		<MainGUID>5AB3C7DA-8FC3-4BBC-8226-4F91EFD9AE9F</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="188" FileName="Transport Element.xml">
+		<MainGUID>A117C8F5-39B3-4826-80C3-F912E4222AB5</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="189" FileName="Tread Component.xml">
+		<MainGUID>67D5BED0-B0D1-4A6B-8B1A-F96539D4715D</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="190" FileName="TrussMaker Object.xml">
+		<MainGUID>D85F76C6-ECA1-4139-8E2F-915504EE5A03</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="191" FileName="Up and Down Text.xml">
+		<MainGUID>55479114-2F4A-4BD4-89F7-2B75F8AC789C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="192" FileName="Walking Line Symbol.xml">
+		<MainGUID>2A17E456-6795-4327-BC09-81D327435CFD</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="193" FileName="Wall End.xml">
+		<MainGUID>0F059DC2-6053-11D7-9084-000393ABEA8E</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="194" FileName="Wall Extra (Window).xml">
+		<MainGUID>7B58FEA8-523D-4DB7-8D45-3AABD1E132F8</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="195" FileName="Wall Opening.xml">
+		<MainGUID>F6AE9687-2BC7-4D47-88C9-8F793E1DE2D6</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="196" FileName="Wall.xml">
+		<MainGUID>BFE5CCAD-BE4C-4B6D-9B9D-8162611C691A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="197" FileName="Water Heaters.xml">
+		<MainGUID>4E3D576C-9DB4-4BE2-85B4-557AC8845C8C</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="198" FileName="Wind Turbines.xml">
+		<MainGUID>26E0089A-B56A-4708-8DC4-623339CED189</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="199" FileName="Window (Wall).xml">
+		<MainGUID>4ABD0A6E-634B-4931-B3AA-9BEE01F35CDF</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="200" FileName="Window Marker.xml">
+		<MainGUID>45B4A2D0-233C-4C28-B8B1-84C1B7BD7220</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="201" FileName="Window Opening.xml">
+		<MainGUID>BCEF86BC-954F-4861-8913-7B183C964396</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="202" FileName="Window-Door-Skylight Marker.xml">
+		<MainGUID>9C0F3C78-D2CB-4528-ADA2-703C8A09FC1A</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="203" FileName="Worksheet Marker.xml">
+		<MainGUID>C301ED5A-C684-466A-826A-7E7E1BA80211</MainGUID>
+	</BuiltInLibPart>
+	<BuiltInLibPart ID="204" FileName="Zone Stamp.xml">
+		<MainGUID>A73622DE-E40A-4E63-ADB7-52D13422BD06</MainGUID>
+	</BuiltInLibPart>
+    <BuiltInLibPart ID="205" FileName="Opening Symbol.xml">
+        <MainGUID>1069F1B5-9F1B-D37E-72F9-C9B8CB9C01F6</MainGUID>
+  </BuiltInLibPart>
+  <BuiltInLibPart ID="206" FileName="Custom Cable Carrier Fitting.xml">
+    <MainGUID>AF15CE84-26D3-4EC6-B753-45C74FA5D87E</MainGUID>
+  </BuiltInLibPart>
+</BuiltInLibPartMainGUIDs>
