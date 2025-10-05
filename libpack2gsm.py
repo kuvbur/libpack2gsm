@@ -3,15 +3,11 @@ import pathlib
 import subprocess
 import shutil
 import os
+from download_and_unzip import GetLP_XMLConverters
 from lxml import etree
 import json
 import re
 
-curr_dir = pathlib.Path(__file__).parent.absolute()
-lcf_dir = curr_dir / 'lcf'
-temp_dir = curr_dir / 'temp'
-conv28 = curr_dir / 'tool'/'LP_XMLConverter28'/'WIN'/'LP_XMLConverter.EXE'
-conv25 = curr_dir / 'tool'/'LP_XMLConverter25'/'WIN'/'LP_XMLConverter.EXE'
 code_list = ['Script_1D', 'Script_3D', 'Script_2D','Script_PR','Script_UI','Script_VL','Script_FWM','Script_BWM', 'Comment','Keywords']
 def handleRemoveReadonly(func, path, exc):
     excvalue = exc[1]
@@ -175,17 +171,80 @@ def translate_xml(fname, param):
     with open(fname, 'tw', encoding='utf-8') as f:
         f.write(txt)
 
-def alllibpack2gsm():
-    paths = sorted(pathlib.Path(curr_dir).glob('**/*.libpack'))
-    full_lcf = prepfolder(temp_dir / 'full_lcf')
+def gsm2lcf(lcf_dir, libpack, display_name, lcf_name, convt):
+    lcf = lcf_dir/ f"{display_name}.lcf"
+    param = [f'{convt}', 'createcontainer',f'{lcf}','-compress','9',
+              f'{libpack/lcf_name.split(".")[0]}']
+    if run_shell_command(param):
+        return lcf
+    else:
+        print ("Error on gsm2lcf")
+        return None
+    
+def xml2gsm(temp_dir, libpack, convt):
+    old_gsm_dir = prepfolder(temp_dir /libpack.parent.name.split(".")[0]/"gsm25")
+    param = [f'{convt}', 'x2l','-l','CYR',
+             f'{libpack}', f'{old_gsm_dir}']
+    if run_shell_command(param):
+        return old_gsm_dir
+    else:
+        print ("Error on xml2gsm")
+        return None
+
+def gsm2xml(temp_dir, libpack, convf):
+    xml_dir = prepfolder(temp_dir /libpack.parent.name.split(".")[0]/"from_gsm")
+    param = [f'{convf}', 'l2x','-l','CYR','-compatibility','25',
+             f'{libpack}', f'{xml_dir}']
+    if run_shell_command(param):
+        return xml_dir
+    else:
+        print ("gsm2xml")
+        return None
+
+def lcf2gsm(libpack, lcf_name, convf):
+    gsm_dir = prepfolder(libpack.parent/"from_lcf")
+    param = [f'{convf}', 'extractcontainer',
+             f'{libpack/lcf_name}', f'{gsm_dir}']
+    if run_shell_command(param):
+        return gsm_dir
+    else:
+        print ("lcf2gsm")
+        return None
+
+def libpack2lcf(temp_dir, libpack, convf):
+    lcf_dir = prepfolder(temp_dir /libpack.name.split(".")[0]/"from_libpack")
+    param = [f'{convf}', 'extractpackage',
+             f'{libpack.absolute()}', f'{lcf_dir}']
+    if run_shell_command(param):
+        return lcf_dir
+    else:
+        print ("libpack2lcf")
+        return None
+
+def main(from_version, to_version, language, source_path, target_path, merge_lcf):
+    curr_dir = pathlib.Path(__file__).parent.absolute()
+    if source_path is None:
+        source_path = curr_dir / 'libpack'
+    else:
+        source_path = pathlib.Path(source_path)
+    if target_path is None:
+        target_path = curr_dir / 'lcf'
+    else:
+        target_path = pathlib.Path(target_path)
+    temp_dir = curr_dir / 'temp'
+    prepfolder(temp_dir)
+    convf = GetLP_XMLConverters(from_version, curr_dir / 'tool')
+    convt = GetLP_XMLConverters(to_version, curr_dir / 'tool')
+    paths = sorted(pathlib.Path(source_path).glob('**/*.libpack'))
+    if merge_lcf : full_lcf = prepfolder(temp_dir / 'full_lcf')
     for libpack in paths:
-        lcf_dir = libpack2lcf(libpack)
+        lcf_dir = libpack2lcf(temp_dir, libpack, convf)
         if lcf_dir is not None:
             info = getpackageinfo(lcf_dir)
             if info['lcfPath'] is not None:
-                gsm_dir = lcf2gsm(lcf_dir, info['lcfPath'])
+                gsm_dir = lcf2gsm(lcf_dir, info['lcfPath'], convf)
         if gsm_dir is not None:
-            xml_dir = gsm2xml(gsm_dir)
+            xml_dir = gsm2xml(temp_dir, gsm_dir, convf)
             if 'paramname' in info:
                 for f in info['paramname']:
                     for p in sorted(pathlib.Path(xml_dir).glob('**/'+f+'.xml')):
@@ -195,67 +254,17 @@ def alllibpack2gsm():
                     for p in sorted(pathlib.Path(xml_dir).glob('**/'+f+'.xml')):
                         p.rename(p.parent / f'{info["filename"][f]}.xml')
         if xml_dir is not None:
-            old_gsm_dir = xml2gsm(xml_dir)
+            old_gsm_dir = xml2gsm(temp_dir, xml_dir, convt)
         if old_gsm_dir is not None:
-            # shutil.copytree(old_gsm_dir/info['displayName'].split(".")[0], full_lcf/info['PackageName'])
-            lcf25_dir = gsm2lcf(old_gsm_dir, info['displayName'], info['lcfPath'])
-    # param = [f'{conv25}', 'createcontainer','full_lcf_25.lcf','-compress','9',
-    #           f'{full_lcf}']
-    # run_shell_command(param)
+            if merge_lcf : shutil.copytree(old_gsm_dir/info['displayName'].split(".")[0], full_lcf/info['PackageName'])
+            lcf25_dir = gsm2lcf(target_path, old_gsm_dir, info['displayName'], info['lcfPath'],convt)
+    if merge_lcf: 
+        param = [f'{convt}', 'createcontainer',str(target_path/'full_lcf_25.lcf'),'-compress','9',
+                f'{full_lcf}']
+        run_shell_command(param)
+    if temp_dir.exists():
+        shutil.rmtree(temp_dir, ignore_errors=False,
+                        onerror=handleRemoveReadonly)
 
-def gsm2lcf(libpack, display_name, lcf_name):
-    lcf = lcf_dir/ f"{display_name}.lcf"
-    param = [f'{conv25}', 'createcontainer',f'{lcf}','-compress','9',
-              f'{libpack/lcf_name.split(".")[0]}']
-    if run_shell_command(param):
-        return lcf
-    else:
-        print ("Error on gsm2lcf")
-        return None
-    
-def xml2gsm(libpack):
-    old_gsm_dir = prepfolder(temp_dir /libpack.parent.name.split(".")[0]/"gsm25")
-    param = [f'{conv25}', 'x2l','-l','CYR',
-             f'{libpack}', f'{old_gsm_dir}']
-    if run_shell_command(param):
-        return old_gsm_dir
-    else:
-        print ("Error on xml2gsm")
-        return None
-
-def gsm2xml(libpack):
-    xml_dir = prepfolder(temp_dir /libpack.parent.name.split(".")[0]/"from_gsm")
-    param = [f'{conv28}', 'l2x','-l','CYR','-compatibility','25',
-             f'{libpack}', f'{xml_dir}']
-    if run_shell_command(param):
-        return xml_dir
-    else:
-        print ("gsm2xml")
-        return None
-
-def lcf2gsm(libpack, lcf_name):
-    gsm_dir = prepfolder(libpack.parent/"from_lcf")
-    param = [f'{conv28}', 'extractcontainer',
-             f'{libpack/lcf_name}', f'{gsm_dir}']
-    if run_shell_command(param):
-        return gsm_dir
-    else:
-        print ("lcf2gsm")
-        return None
-
-def libpack2lcf(libpack):
-    lcf_dir = prepfolder(temp_dir /libpack.name.split(".")[0]/"from_libpack")
-    param = [f'{conv28}', 'extractpackage',
-             f'{libpack.absolute()}', f'{lcf_dir}']
-    if run_shell_command(param):
-        return lcf_dir
-    else:
-        print ("libpack2lcf")
-        return None
-    
-prepfolder(temp_dir)
-prepfolder(lcf_dir)
-alllibpack2gsm()
-if temp_dir.exists():
-    shutil.rmtree(temp_dir, ignore_errors=False,
-                    onerror=handleRemoveReadonly)
+if __name__ == "__main__":
+    main("28", "25", "RUS", None, None, False)

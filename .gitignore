@@ -208,3 +208,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 *.version
+/tool/LP_XMLConverter26
+*.zip
+/.vscode
