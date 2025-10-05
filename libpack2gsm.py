@@ -35,7 +35,7 @@ def run_shell_command(command_line):
         print('Subprocess finished')
     return True
 
-def getpackageinfo(lcf_dir):
+def getpackageinfo(lcf_dir, language):
     info = {}
     try:
         parser = etree.XMLParser(strip_cdata=False)
@@ -55,7 +55,7 @@ def getpackageinfo(lcf_dir):
         PathNameTables = croot.find('Dictionaries')
         if PathNameTables is not None:
             for p in PathNameTables:
-                if p.attrib['language'] == 'RUS':
+                if p.attrib['language'] == language:
                     if 'fileName' in p.attrib['type']: 
                         filenamejson = p.attrib['path']
                     if 'symbolStrings' in p.attrib['type']: 
@@ -72,8 +72,8 @@ def getpackageinfo(lcf_dir):
     if LocalizedPackageNamesPath is not None:
         localizedPackageNamesFile = open(lcf_dir/LocalizedPackageNamesPath, 'r', encoding="utf-8")
         localizedPackageNamesData = json.load(localizedPackageNamesFile)
-        if 'RUS' in localizedPackageNamesData['LocalizedPackageNames']:
-            info['PackageName'] = localizedPackageNamesData['LocalizedPackageNames']['RUS']
+        if language in localizedPackageNamesData['LocalizedPackageNames']:
+            info['PackageName'] = localizedPackageNamesData['LocalizedPackageNames'][language]
         else:
             if 'INT' in localizedPackageNamesData['LocalizedPackageNames']:
                 info['PackageName'] = localizedPackageNamesData['LocalizedPackageNames']['INT']
@@ -240,7 +240,7 @@ def main(from_version, to_version, language, source_path, target_path, merge_lcf
     for libpack in paths:
         lcf_dir = libpack2lcf(temp_dir, libpack, convf)
         if lcf_dir is not None:
-            info = getpackageinfo(lcf_dir)
+            info = getpackageinfo(lcf_dir, language)
             if info['lcfPath'] is not None:
                 gsm_dir = lcf2gsm(lcf_dir, info['lcfPath'], convf)
         if gsm_dir is not None:
@@ -258,7 +258,7 @@ def main(from_version, to_version, language, source_path, target_path, merge_lcf
         if old_gsm_dir is not None:
             if merge_lcf : shutil.copytree(old_gsm_dir/info['displayName'].split(".")[0], full_lcf/info['PackageName'])
             lcf25_dir = gsm2lcf(target_path, old_gsm_dir, info['displayName'], info['lcfPath'],convt)
-    if merge_lcf: 
+    if merge_lcf:
         param = [f'{convt}', 'createcontainer',str(target_path/'full_lcf_25.lcf'),'-compress','9',
                 f'{full_lcf}']
         run_shell_command(param)
