@@ -1,5 +1,6 @@
 # libpack2gsm
 Данный скрипт на Python выполняет конвертацию пакетов библиотек ArchiCAD версии 28 в контейнеры LCF, которые совместимы с ArchiCAD версии 25.
+
 <img width="597" height="465" alt="изображение" src="https://github.com/user-attachments/assets/c889738b-d093-4905-bbe6-ab3473c7f675" />
 
 ## Описание
