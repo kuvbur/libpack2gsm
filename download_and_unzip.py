@@ -9,7 +9,8 @@ import zipfile
 import requests
 API_ENDPOINT = 'https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key={}'
 
-convurl = {"28": "https://disk.yandex.ru/d/ys5eJV8SVmBTVA",
+convurl = {
+    "28": "https://disk.yandex.ru/d/ys5eJV8SVmBTVA",
     "27": "https://disk.yandex.ru/d/C07SpAMFOXUQ9Q",
     "26": "https://disk.yandex.ru/d/Q-iPo54e0gBJiQ",
     "25": "https://disk.yandex.ru/d/gp9de0dAtIMJ7A",
