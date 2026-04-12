@@ -2,7 +2,7 @@
 
 Данный скрипт на Python выполняет конвертацию пакетов библиотек ArchiCAD версии 28 в контейнеры LCF, совместимые с ArchiCAD версии 25.
 
-<img width="597" height="465" alt="изображение" src="https://github.com/user-attachments/assets/c889738b-d093-4905-bbe6-ab3473c7f675" />
+<img width="597" height="465" alt="изображение" src="https://github.com/user-attachments/assets/5e629ce5-6bf5-445b-9d64-2344cd13d3d6" />
 
 ## Описание
 В ArchiCAD 28 изменился формат библиотек, что создает проблемы с обратной совместимостью для проектов, работающих в ArchiCAD 25-27. Данный скрипт преобразует пакеты из ArchiCAD 28 в формат LCF, который понимают ArchiCAD 25-27. При наличии русского перевода в libpack файлы LCF также будут переведены.
