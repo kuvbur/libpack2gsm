@@ -10,6 +10,7 @@ import requests
 API_ENDPOINT = 'https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key={}'
 
 convurl = {
+    "29": "https://disk.yandex.ru/d/Fyhpi7_1SsAgGQ",
     "28": "https://disk.yandex.ru/d/ys5eJV8SVmBTVA",
     "27": "https://disk.yandex.ru/d/C07SpAMFOXUQ9Q",
     "26": "https://disk.yandex.ru/d/Q-iPo54e0gBJiQ",
